@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1011753324000",
+    "project_id": "usedmart-7d517",
+    "storage_bucket": "usedmart-7d517.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1011753324000:android:47a97d0bcd73695e056f85",
+        "android_client_info": {
+          "package_name": "com.example.usedmart"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKQAyZyH2MtDZdOrAxcgAJjWNlyvhaHAk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
