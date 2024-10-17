@@ -20,27 +20,28 @@
                 android:id="@+id/imageView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:contentDescription="@string/intro_image"
                 android:scaleType="centerCrop"
-                android:src="@drawable/ellipse1" />
+                android:src="@drawable/intro_img" />
 
             <TextView
                 android:id="@+id/textView8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Find New Homes for"
+                android:text="@string/find_new_homes_for"
                 android:textAlignment="center"
                 android:textColor="@color/text_Black"
-                android:textSize="31sp"
+                android:textSize="32sp"
                 android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Your Old Gear"
+                android:text="@string/your_old_gear"
                 android:textAlignment="center"
                 android:textColor="@color/orange"
-                android:textSize="31sp"
+                android:textSize="32sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -50,33 +51,34 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
-                android:text="Welcome to the ultimate student marketplace! \n Find new homes for your unused items and \n explore great deals from fellow students."
+                android:text="@string/introDesc"
                 android:textAlignment="center"
-                android:textColor="@color/text_Black" />
+                android:textColor="@color/text_Black"
+                android:textSize="16sp"/>
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/introBtn"
+                style="@android:style/Widget.Button"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:layout_marginStart="24dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="24dp"
-                style="@android:style/Widget.Button"
-                android:textColor="@color/white"
                 android:background="@drawable/bottom_nav"
-                android:text="Get Started"
-                android:textSize="21sp"
-                android:textStyle="bold"/>
+                android:text="@string/get_started"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textView11"
+                android:id="@+id/signupTxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:text="@string/Signup"
                 android:textAlignment="center"
                 android:textColor="@color/text_Black"
-                android:textSize="18sp" />
+                android:textSize="16sp" />
 
         </LinearLayout>
     </ScrollView>

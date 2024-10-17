@@ -68,21 +68,23 @@ dependencies {
     implementation(libs.firebase.database)
 
     //Lifecycle
-    implementation("androidx.lifecycle:lifecycle-extensions:2.2.0")
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.6")
-    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.6")
-    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.8.6")
+    implementation(libs.androidx.lifecycle.extensions)
+    implementation(libs.androidx.lifecycle.runtime.ktx.v286)
+    implementation(libs.androidx.lifecycle.viewmodel.ktx)
+    implementation(libs.androidx.lifecycle.livedata.ktx)
 
     //ViewModel
-    implementation("androidx.activity:activity-ktx:1.9.2")
+    implementation(libs.androidx.activity.ktx)
 
-    implementation ("com.github.bumptech.glide:glide:4.16.0")
-    implementation ("com.google.code.gson:gson:2.11.0")
-    implementation("com.tbuonomo:dotsindicator:5.0")
+    implementation (libs.glide)
+    implementation (libs.gson)
+    implementation(libs.dotsindicator)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation(libs.firebase.auth.ktx)
+    implementation(libs.firebase.auth)
 
 
     testImplementation(libs.junit)

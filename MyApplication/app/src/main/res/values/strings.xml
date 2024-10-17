@@ -1,4 +1,17 @@
 <resources>
     <string name="app_name">UsedMart</string>
     <string name="Signup">Don\'t have an account? <font color="#F17635">Sign Up</font></string>
+    <string name="get_started">Get Started</string>
+    <string name="introDesc">Welcome to the ultimate student marketplace! \n Find new homes for your unused items and
+        \n explore great deals from fellow students.
+    </string>
+    <string name="your_old_gear">Your Old Gear</string>
+    <string name="find_new_homes_for">Find New Homes for</string>
+    <string name="intro_image">Intro image</string>
+    <string name="already">Already have an account? <font color="#F17635">Sign In</font></string>
+    <string name="passRecover">Don\'t remember password? <font color="#F17635">Recover It</font></string>
+    <string name="don_t_have_an_account">Don’t have an account? <font color="#F17635">Sign Up</font></string>
+    <string name="policy">By signing up, you agree to the <b><font color="#0E0F10">Terms of Service</font></b> and
+        <b><font color="#0E0F10">Data Processing Agreement</font></b>
+    </string>
 </resources>

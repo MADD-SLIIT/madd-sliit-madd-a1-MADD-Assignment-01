@@ -2,11 +2,6 @@ package com.example.usedmart.activity
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
-import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import com.example.usedmart.R
 import com.example.usedmart.databinding.ActivityIntroBinding
 
 class IntroActivity : BaseActivity() {
@@ -17,7 +12,11 @@ class IntroActivity : BaseActivity() {
         setContentView(binding.root)
 
         binding.introBtn.setOnClickListener {
-            startActivity(Intent(this@IntroActivity, MainActivity::class.java))
+            startActivity(Intent(this@IntroActivity, LoginActivity::class.java))
+        }
+
+        binding.signupTxt.setOnClickListener {
+            startActivity(Intent(this@IntroActivity, SignupActivity::class.java))
         }
 
     }
