@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="light_Grey">#F0F0F0</color>
+    <color name="orange">#F17635</color>
+    <color name="text_Black">#0E0F10</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="textGrey">#80818B</color>
+    <color name="dotGrey">#D9D9D9</color>
+
+
 </resources>
