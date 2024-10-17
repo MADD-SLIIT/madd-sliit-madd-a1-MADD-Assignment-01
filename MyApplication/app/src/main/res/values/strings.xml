@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">UsedMart</string>
+    <string name="Signup">Don\'t have an account? <font color="#F17635">Sign Up</font></string>
 </resources>

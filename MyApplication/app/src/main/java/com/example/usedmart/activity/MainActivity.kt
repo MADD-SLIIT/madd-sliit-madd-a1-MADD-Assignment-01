@@ -4,11 +4,15 @@ import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.CompositePageTransformer
 import androidx.viewpager2.widget.MarginPageTransformer
+import com.example.usedmart.Adapter.BrandAdapter
+import com.example.usedmart.Adapter.RecommendAdapter
 import com.example.usedmart.Model.SliderModel
-import com.example.usedmart.SliderAdapter
+import com.example.usedmart.Adapter.SliderAdapter
 import com.example.usedmart.ViewModel.MainViewModel
 import com.example.usedmart.databinding.ActivityMainBinding
 
@@ -21,13 +25,15 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         initBanner()
+        initBrand()
+        initRecommend()
     }
 
     private fun initBanner() {
         binding.progressBarAd.visibility = View.VISIBLE
         viewModel.banners.observe(this, Observer { items ->
             banners(items)
-            binding.progressBarAd.visibility=View.GONE
+            binding.progressBarAd.visibility = View.GONE
         })
         viewModel.loadBanners()
     }
@@ -48,4 +54,29 @@ class MainActivity : AppCompatActivity() {
             binding.dotIndicator.attachTo(binding.viewPageSlider)
         }
     }
+
+    private fun initBrand() {
+        binding.progressBarBrand.visibility = View.VISIBLE
+        viewModel.brands.observe(this, Observer {
+            binding.viewBrand.layoutManager =
+                LinearLayoutManager(this@MainActivity, LinearLayoutManager.HORIZONTAL, false)
+            binding.viewBrand.adapter = BrandAdapter(it)
+            binding.progressBarBrand.visibility = View.GONE
+
+        })
+        viewModel.loadBrand()
+
+    }
+
+    private fun initRecommend() {
+        binding.progressBarPopular.visibility = View.VISIBLE
+        viewModel.recommend.observe(this, Observer {
+            binding.viewPopular.layoutManager = GridLayoutManager(this@MainActivity, 2)
+            binding.viewPopular.adapter = RecommendAdapter(it)
+            binding.progressBarPopular.visibility = View.GONE
+        })
+        viewModel.loadRecomend()
+
+    }
+
 }
